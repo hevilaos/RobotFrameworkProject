@@ -19,3 +19,12 @@ TC01_Invalid Login_Empty username
     Press Login Button
     Verify that error message is available   Username is required
     Sleep       3
+
+TC02_Invalid Login_Empty password
+    Go to       ${initialUrl}
+    Input username      ${validUser}
+    Verify that error message is not available   Password is required
+    Press Login Button
+    Verify that error message is available  Password is required
+    Sleep       3
+

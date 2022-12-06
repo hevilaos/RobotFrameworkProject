@@ -17,3 +17,8 @@ Verify that error message is available
     [Arguments]     ${messsage}
     Element Should Be Visible       //*[@id="login_button_container"]/div/form/div[3]
     Element Should Contain      //*[@id="login_button_container"]/div/form/div[3]       ${messsage}
+
+Input username
+    [Arguments]     ${username}
+    Input Text      //*[@id="user-name"]        ${username}
+
