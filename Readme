@@ -3,3 +3,7 @@ This project is a study case that is being build with the objective of mature kn
 I'm going to create some autometed test scenarios for the open web site:  https://www.saucedemo.com/
 Used browser: Chrome
 
+Available Verifications:
+- TC01_Invalid Login_Empty username : verifies front behavior when user tries to login without input username data
+- TC02_Invalid Login_Empty password : verifies front behavior when user tries to login without input password data
+- TC03_Invalid Login_Wrong password : verifies front behavior when user tries to login using wrong password

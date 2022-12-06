@@ -28,3 +28,11 @@ TC02_Invalid Login_Empty password
     Verify that error message is available  Password is required
     Sleep       3
 
+TC03_Invalid Login_Wrong password
+    Go to       ${initialUrl}
+    Input username      ${validUser}
+    Input password       //*[@id="password"]       ${invalidPassword}
+    Verify that error message is not available      Username and password do not match any user in this service
+    Press Login Button
+    Verify that error message is available  Username and password do not match any user in this service
+    Sleep       3
